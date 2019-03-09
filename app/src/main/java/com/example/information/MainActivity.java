@@ -13,10 +13,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("");
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeIntent=new Intent(MainActivity.this,HomeActivity.class);
+                Intent homeIntent=new Intent(MainActivity.this, Information.class);
                 startActivity(homeIntent);
             }
         },SPLASH_TIME_OUT);

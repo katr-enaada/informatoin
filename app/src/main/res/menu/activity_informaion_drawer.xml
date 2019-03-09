@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_info"
+            android:title="Information" />
+        <item
+            android:id="@+id/nav_my_events"
+            android:icon="@drawable/ic_my_events"
+            android:title="My Events" />
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/ic_calendar"
+            android:title="Calendar" />
+        <item
+            android:id="@+id/speakers"
+            android:icon="@drawable/speaker"
+            android:title="Speakers" />
+        <item
+            android:id="@+id/more"
+            android:icon="@drawable/ic_more"
+            android:title="More" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>
