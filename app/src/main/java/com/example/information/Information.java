@@ -1,10 +1,6 @@
 package com.example.information;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -86,22 +82,33 @@ public class Information extends AppCompatActivity
             case R.id.nav_information:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new InformationFragment()).commit();
+                this.setTitle("INFORMATION");
                 break;
             case R.id.nav_my_events:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new MyEventsFragment()).commit();
+                this.setTitle("MY EVENTS");
                 break;
             case R.id.calendar:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new CalendarFragment()).commit();
+                this.setTitle("CALENDAR");
                 break;
             case R.id.speakers:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SpeakersFragment()).commit();
+                        new SpeakerFragment()).commit();
+                this.setTitle("SPEAKERS");
                 break;
             case R.id.more:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new MoreFragment()).commit();
+
+                this.setTitle("MORE");
+                break;
+            case R.id.login:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new LoginFragment()).commit();
+                this.setTitle("LOGIN");
                 break;
             case R.id.feedback:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();

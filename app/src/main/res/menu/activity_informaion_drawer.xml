@@ -24,6 +24,10 @@
             android:id="@+id/more"
             android:icon="@drawable/ic_more"
             android:title="More" />
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/ic_login"
+            android:title="Login" />
     </group>
 
     <item android:title="Communicate">
